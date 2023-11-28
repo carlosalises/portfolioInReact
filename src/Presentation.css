@@ -1,0 +1,74 @@
+
+
+#text {
+	margin: 20px;
+}
+
+#my-info {
+	border-radius: 10px;
+	border: 3px solid white;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#name{
+	font-size: 30px;
+	margin: 10px;
+	animation: tracking-in-contract 1s linear both
+}
+
+@keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
+
+#developer{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+}
+
+#location{
+	font-size: 15px; 
+	text-align: center; 
+	margin-top: 20px;
+}
+
+#description{
+	color: white;
+	white-space: nowrap;
+	animation: typing 3s steps(111);
+}
+
+
+@keyframes typing {
+	from  {
+		clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	}
+	to{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+#curriculum-download{
+	border-radius: 10px;
+    width: auto;
+    height: auto;
+	background-color: rgb(29, 101, 173);
+	margin-top: 50px;
+	outline: 4px solid white;
+}
+
+#curriculum-download:hover{
+	animation:vibrate .5s linear both
+}
+
+@keyframes vibrate{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+
+
+#my-image{
+	width: 200px;
+	border: 2px solid white;
+	border-radius: 5px;
+}

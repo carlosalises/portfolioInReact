@@ -1,0 +1,14 @@
+#my-project{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+#project-image{
+  border: 3px solid white;
+  border-radius: 15px;
+  margin: 10px;
+  width: 20em;
+  height: 200px;
+}
