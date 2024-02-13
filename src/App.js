@@ -4,9 +4,7 @@ import Experience from './Experience';
 import Presentation from './Presentation';
 import Project from './Project';
 import {spaceGoRsp, esdiRsp} from "./data/Responsabilities"
-import dungeonImage from "./images/dungeon.png";
-import hangmanImage from "./images/hangman.png";
-import {firsProjectDescription, hangmanDescription, secondProject} from "./data/projectsObjects";
+import {firsProjectDescription, secondProject} from "./data/projectsObjects";
 
 export function App() {
 

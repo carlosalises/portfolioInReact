@@ -1,11 +1,11 @@
 import React from 'react'
 import './css/Project.css'
 
-export default function Project({projectName, technology, description, image}) {
+export default function Project({projectName, technology, description}) {
 
   return (
     <article id='my-project'>
-      <img id="project-image" src = {image} alt=''/>
+      <img id="project-image" alt=''/>
       <div>
         <h2 style={{textAlign : "center"}}>{projectName}</h2>
         <h3 style={{textAlign : "center"}}>{technology}</h3>
