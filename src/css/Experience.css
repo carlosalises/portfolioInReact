@@ -1,0 +1,98 @@
+.container {
+  width: 400px;
+  height: 300px;
+  background: #1e1e1e;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.terminal_toolbar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #212121;
+  justify-content: space-between;
+}
+
+
+.user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.terminal_body {
+  background: rgba(0, 0, 0, 0.6);
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal_prompt {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.terminal_prompt span {
+  margin-left: 4px;
+}
+
+.terminal_user {
+  color: #1eff8e;
+}
+
+.terminal_location {
+  color: #4878c0;
+}
+
+.terminal_bling {
+  color: #dddddd;
+}
+
+.terminal_cursor {
+  color: rgb(29, 101, 173);
+  width: auto;
+  margin-left: 10px;
+}
+
+.terminal_output {
+  padding: 4px;
+  flex-grow: 1;
+}
+
+.terminal_output p{
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.terminal_input {
+  padding: 10px;
+}
+
+.input_text {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #e6e6e6;
+  caret-color: #1eff8e;
+}
+
+.rsp-list {
+  text-align: center;
+  list-style: none;
+}
+
+.rsp-list, li{
+  margin: 5px;
+  font-size: 13px;
+}

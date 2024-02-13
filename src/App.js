@@ -6,7 +6,7 @@ import Project from './Project';
 import {spaceGoRsp, esdiRsp} from "./data/Responsabilities"
 import dungeonImage from "./images/dungeon.png";
 import hangmanImage from "./images/hangman.png";
-import {dungeonDescription, hangmanDescription} from "./data/projectsObjects";
+import {firsProjectDescription, hangmanDescription, secondProject} from "./data/projectsObjects";
 
 export function App() {
 
@@ -21,23 +21,13 @@ export function App() {
 
             <section style={{gridArea: "experience"}}>
 
-              <h1 style={{textAlign:"center", fontSize: 20, marginBottom: 10}}>MOST RECENT EXPERIENCE</h1>
+              <h1 style={{textAlign:"center", fontSize: 20, marginBottom: 20}}>MOST RECENT EXPERIENCE</h1>
               <article className='experience-article'>
-                <Experience cargo="Front End" fecha="12/2022 - 04/2023"/>
-                <ul className='rsp-list'>
-                  {spaceGoRsp.map((rsp) => (
-                    <li>{rsp}</li>
-                  ))}
-                </ul>
+                <Experience cargo="Front End" place="SpaceGo" fecha="12/2022 - 04/2023" habilities={spaceGoRsp}/>
               </article>
               <br></br>
               <article className='experience-article'>
-                <Experience cargo="Soporte Tecnico" fecha="10/2020 - 03/2021"/>
-                <ul className='rsp-list'>
-                  {esdiRsp.map((rsp) => (
-                    <li>{rsp}</li>
-                  ))}
-                </ul>
+                <Experience cargo="Technical Support" place="ESDI" habilities={esdiRsp} fecha="10/2020 - 03/2021"/>
               </article>
 
             </section>
@@ -45,10 +35,10 @@ export function App() {
             <section style={{gridArea:"education"}}>
               <h1 style={{textAlign:"center", fontSize: 20, marginBottom: 10}}>EDUCATION</h1>
               <div style={{display: "flex", justifyContent: "center"}}>
-                <article>
+                <article style={{margin : "10px"}}>
                   <Education type= "CFGM" date="September 2019 - July 2021" place="Institut Sabadell" about="Microcomputer systems and networks"/>
                 </article>
-                <article>
+                <article style={{margin : "10px"}}>
                   <Education type= "CFGS" date="September 2021 - July 2023" place="Institut Sabadell" about="Multiplatform application development, profile 
 								  professional video games and digital leisure."/>
                 </article>
@@ -56,20 +46,38 @@ export function App() {
             </section>
           
 
-            <section style={{gridArea:"skills"}}>
+            <section id='skills-container' style={{gridArea:"skills"}}>
               <h1 style={{textAlign:"center", fontSize: 20, marginBottom: 10}}>SKILLS</h1>
-              <article id='skills-article'>
-                <p style={{textAlign: "center"}}>
-                  HTML - CSS - JavaScript - Unity - C# - SQL
-                </p>
-              </article>
+                <div id='skills-summary'>
+                  <span style={{ '--i': 1 }}>
+                    HTML
+                  </span >
+                  <span style={{ '--i': 2 }}>
+                    CSS
+                  </span>
+                  <span style={{ '--i': 3 }}>
+                    JAVASCRIPT
+                  </span>
+                  <span style={{ '--i': 4 }}>
+                    UNITY
+                  </span>
+                  <span style={{ '--i': 5 }}>
+                    C#
+                  </span>
+                  <span style={{ '--i': 6 }}> 
+                    SQL
+                  </span>
+                  <span style={{ '--i': 7 }}>
+                    JAVA
+                  </span>
+                </div>
             </section>
 
             <section style={{gridArea:"projects", display: "grid", placeItems: "center "}}>
               <h1 style={{textAlign:"center", fontSize: 20, marginBottom: 10}}>PROJECTS</h1>
               <div style={{display: "flex", justifyContent: "center"}}>
-                <Project projectName="Dungeon Minigame" technology="Unity" description={dungeonDescription} image={dungeonImage}/>
-                <Project projectName="Ahorcado" technology="Android - Java" description={hangmanDescription} image={hangmanImage}/>
+                <Project projectName="Demon Escape" technology="Unity" description={firsProjectDescription}/>
+                <Project projectName="Clumer" technology="Ionic - Spring" description={secondProject}/>
               </div>
             </section>
 

@@ -5,8 +5,8 @@
 }
 
 #my-info {
-	border-radius: 10px;
-	border: 3px solid white;
+	border-radius: 5px;
+	border: 1px solid white;
 	padding: 50px;
 	display: flex;
 	justify-content: center;
@@ -57,7 +57,7 @@
     height: auto;
 	background-color: rgb(29, 101, 173);
 	margin-top: 50px;
-	outline: 4px solid white;
+	outline: 2px solid white;
 }
 
 #curriculum-download:hover{

@@ -3,7 +3,7 @@ export const spaceGoRsp = [
     '- Graphic layout of the machines.',
 	'- Development of mini-games implemented within the slots.',
 	'- Testing and reporting of problems in the machines.',
-	'- Troubleshooting and bug fixing.</li>',
+	'- Troubleshooting and bug fixing.',
 	'- Contribute to the specification of graphical improvements to current machines and ideas for future machines.'
 ]
 
