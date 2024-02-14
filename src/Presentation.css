@@ -6,7 +6,8 @@
 
 #my-info {
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 2px solid white;
+	box-shadow: 0 0 15px white;
 	padding: 50px;
 	display: flex;
 	justify-content: center;
@@ -55,17 +56,24 @@
 	border-radius: 10px;
     width: auto;
     height: auto;
-	background-color: rgb(29, 101, 173);
+	background : #212121;
 	margin-top: 50px;
 	outline: 2px solid white;
 }
 
 #curriculum-download:hover{
-	animation:vibrate .5s linear both
+	animation: shadowIn .3s linear both
 }
 
-@keyframes vibrate{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+#curriculum-download:not(:hover){
+	animation: shadowOut .3s linear both
+}
 
+@keyframes shadowIn{
+	100% {
+		box-shadow: 0 0 15px white;
+	}
+}
 
 #my-image{
 	width: 200px;

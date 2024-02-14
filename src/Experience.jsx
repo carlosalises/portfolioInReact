@@ -17,8 +17,8 @@ export default function Experience({cargo, place, fecha, habilities}) {
         </div>
         <div className="terminal_output">
                     <ul style={{marginTop: "30px"}} className='rsp-list'>
-                      {habilities?.map((rsp) => (
-                        <li>{rsp}</li>
+                      {habilities?.map((rsp, index) => (
+                        <li key={index}>{rsp}</li>
                       ))}
                     </ul>
           </div>

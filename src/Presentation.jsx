@@ -21,7 +21,7 @@ export default function Presentation({name, cargo}) {
           <h1 id="developer">{cargo}</h1>
           <h2 id="location">Barcelona - 08206</h2>
           <div id="curriculum-download">
-            <a style={{textDecoration : "none"}} href="archivos/CVCarlosAlises.pdf" download>
+            <a style={{textDecoration : "none"}} href="./archivos/CVCarlosAlises.pdf" download>
                 <h2 style={downloadStyle}>DOWNLOAD CV</h2>
             </a>
           </div>

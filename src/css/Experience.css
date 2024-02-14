@@ -1,9 +1,10 @@
 .container {
   width: 400px;
-  height: 300px;
+  height: auto;
   background: #1e1e1e;
   border-radius: 5px;
   border: 2px solid white;
+  box-shadow: 0 0 5px white;
 }
 
 .terminal_toolbar {
