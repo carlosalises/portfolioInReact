@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useEffect } from 'react';
 import Education from './Education';
 import Experience from './Experience';
 import Presentation from './Presentation';
@@ -6,14 +7,19 @@ import Project from './Project';
 import {spaceGoRsp, esdiRsp} from "./data/Responsabilities"
 import {firsProjectDescription, secondProject} from "./data/projectsObjects";
 
+
 export function App() {
+
+  useEffect(() => {
+    document.title = "Portfolio Carlos Alises";
+  }, []);
 
   return (
       <main>
 
             <section style={{gridArea : "presentation"}}>
               <article>
-                 <Presentation name="Carlos Alises Mora" cargo="FrontEnd Developer"/>
+                 <Presentation name="Carlos Alises Mora" cargo="Software Developer"/>
               </article>
             </section>
 
